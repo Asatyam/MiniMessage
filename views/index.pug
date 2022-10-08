@@ -1,0 +1,16 @@
+extends layout
+
+
+block content
+ 
+  a(href="new") New Message
+  p Welcome to #{title}
+  ul 
+    each message in  messages
+        .test 
+          .user
+            li #{message.user}
+          .text
+            li #{message.text}
+          .added
+            li #{message.added}

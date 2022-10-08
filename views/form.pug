@@ -1,0 +1,34 @@
+extends layout
+
+block content
+
+
+  a(href='/back') Back
+  form(
+    method = "Post"
+    action = "/new"
+  )
+    .auth 
+    
+    input#author( 
+    type='text'
+    name='author'
+    placeholder='User'
+    )
+
+    .mess
+    textarea#message(
+      rows = 1
+      cols= 16
+      type = 'text'
+      name = 'message'
+      placeholder = "Message"
+    
+    )
+    
+
+    .button
+    button(
+    type = 'submit'
+    name = 'submit'
+    ) Submit
